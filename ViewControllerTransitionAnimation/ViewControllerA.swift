@@ -2,6 +2,8 @@ import UIKit
 
 class ViewControllerA: UIViewController {
 
+    private let transition = CircularTransition()
+
     private let button: UIButton = {
         let button = UIButton()
         button.setTitle("P", for: .normal)
@@ -13,6 +15,8 @@ class ViewControllerA: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.delegate = self
+
         view.backgroundColor = .white
 
         view.addSubview(button)
@@ -47,3 +51,18 @@ class ViewControllerA: UIViewController {
 
 }
 
+extension ViewControllerA: UINavigationControllerDelegate {
+
+    func navigationController(
+        _ navigationController: UINavigationController,
+        animationControllerFor operation: UINavigationController.Operation,
+        from fromVC: UIViewController,
+        to toVC: UIViewController
+    ) -> UIViewControllerAnimatedTransitioning? {
+        transition.operation = operation
+        transition.circleColor = .purple
+        transition.startingPoint = button.center
+        return transition
+    }
+
+}

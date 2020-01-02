@@ -17,6 +17,7 @@
 		1862B3A923BDD2A400A30134 /* ViewControllerTransitionAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862B3A823BDD2A400A30134 /* ViewControllerTransitionAnimationTests.swift */; };
 		1862B3B423BDD2A400A30134 /* ViewControllerTransitionAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862B3B323BDD2A400A30134 /* ViewControllerTransitionAnimationUITests.swift */; };
 		1862B3C223BDD2D400A30134 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862B3C123BDD2D400A30134 /* ViewControllerB.swift */; };
+		1862B66423BDE2D300A30134 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862B66323BDE2D300A30134 /* CircularTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1862B3B323BDD2A400A30134 /* ViewControllerTransitionAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTransitionAnimationUITests.swift; sourceTree = "<group>"; };
 		1862B3B523BDD2A400A30134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1862B3C123BDD2D400A30134 /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		1862B66323BDE2D300A30134 /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				1862B38E23BDD2A200A30134 /* AppDelegate.swift */,
 				1862B39023BDD2A200A30134 /* SceneDelegate.swift */,
+				1862B66323BDE2D300A30134 /* CircularTransition.swift */,
 				1862B39223BDD2A200A30134 /* ViewControllerA.swift */,
 				1862B3C123BDD2D400A30134 /* ViewControllerB.swift */,
 				1862B39423BDD2A200A30134 /* Main.storyboard */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1862B39923BDD2A200A30134 /* ViewControllerTransitionAnimation.xcdatamodeld in Sources */,
+				1862B66423BDE2D300A30134 /* CircularTransition.swift in Sources */,
 				1862B39323BDD2A200A30134 /* ViewControllerA.swift in Sources */,
 				1862B3C223BDD2D400A30134 /* ViewControllerB.swift in Sources */,
 				1862B38F23BDD2A200A30134 /* AppDelegate.swift in Sources */,
